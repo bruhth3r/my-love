@@ -27,7 +27,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 18px; /* Increased for better readability */
     font-weight: bold;
-    color: black !important; /* Ensure text is visible */
+    color: white !important; /* Ensure text is visible */
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
