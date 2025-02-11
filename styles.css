@@ -1,61 +1,69 @@
 body {
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     height: 90vh;
     background-color: rgb(203, 195, 227);
-    max-width: 320px; /* Added max-width to make it less wide */
+    max-width: 320px; /* Increased max-width for better readability */
     margin: 0 auto; /* Centers the content */
+    padding: 10px; /* Added padding to prevent text from touching edges */
+    overflow: hidden; /* Prevents horizontal scrolling */
 }
 
 #noButton {
-    position: absolute;
-    margin-left: 80px; /* Reduced margin */
-    transition: 0.5s;
+    position: relative; /* Changed from absolute to keep it within the layout */
+    margin: 5px; /* Reduced margins */
+    max-width: 200px; /* Ensures the 'No' button is smaller than other elements */
 }
 
 #yesButton {
-    position: absolute;
-    margin-right: 80px; /* Reduced margin */
+    position: relative;
+    margin: 5px;
 }
 
 .header_text {
     font-family: 'Nunito', sans-serif;
-    font-size: 16px; /* Reduced from 20px */
+    font-size: 18px; /* Increased for better readability */
     font-weight: bold;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    max-width: 90%; /* Increased width for better text visibility */
+    overflow: visible; /* Prevents text from being hidden */
+    word-wrap: break-word; /* Ensures long words wrap properly */
 }
 
 .buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Stack buttons vertically */
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
-    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .btn {
     background-color: #ffffff;
     color: rgb(233, 48, 48);
-    padding: 6px 16px; /* Reduced padding */
+    padding: 8px 16px; /* Increased padding for better touch experience */
     text-align: center;
     display: inline-block;
-    font-size: 8px; /* Reduced from 10px */
-    margin: 3px 2px;
+    font-size: 10px; /* Increased font size */
+    margin: 4px;
     cursor: pointer;
     border: none;
     border-radius: 10px;
     transition: background-color 0.3s ease;
+    max-width: 80%; /* Prevents overflow */
 }
 
 .gif_container {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 300px; /* Ensures GIF is wider than text */
+    overflow: hidden;
 }
 
 /* Responsive Design */
@@ -65,16 +73,16 @@ body {
     }
 
     .header_text {
-        font-size: 12px; /* Reduced from 14px */
+        font-size: 16px; /* Increased for readability */
     }
 
     img {
-        height: 40vh; /* Reduced size */
+        height: 40vh; /* Adjusted size */
     }
 
     .btn {
-        padding: 4px 10px; /* Reduced from 5px 12px */
-        font-size: 7px; /* Reduced from 8px */
+        padding: 6px 12px; /* Adjusted for touch */
+        font-size: 9px; /* Increased for readability */
     }
 }
 
@@ -84,15 +92,15 @@ body {
     }
 
     .header_text {
-        font-size: 14px; /* Reduced from 18px */
+        font-size: 16px; /* Increased for readability */
     }
 
     img {
-        height: 40vh; /* Reduced size */
+        height: 45vh; /* Adjusted size */
     }
 
     .btn {
-        padding: 5px 14px; /* Reduced from 6px 16px */
-        font-size: 8px; /* Reduced from 9px */
+        padding: 7px 14px; /* Adjusted for better usability */
+        font-size: 10px; /* Increased for readability */
     }
 }
