@@ -4,17 +4,19 @@ body {
     align-items: center;
     height: 90vh;
     background-color: rgb(203, 195, 227);
+    max-width: 320px; /* Added max-width to make it less wide */
+    margin: 0 auto; /* Centers the content */
 }
 
 #noButton {
     position: absolute;
-    margin-left: 100px; /* Reduced margin */
+    margin-left: 80px; /* Reduced margin */
     transition: 0.5s;
 }
 
 #yesButton {
     position: absolute;
-    margin-right: 100px; /* Reduced margin */
+    margin-right: 80px; /* Reduced margin */
 }
 
 .header_text {
@@ -33,13 +35,13 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .btn {
     background-color: #ffffff;
     color: rgb(233, 48, 48);
-    padding: 8px 20px; /* Reduced from 10px 24px */
+    padding: 6px 16px; /* Reduced padding */
     text-align: center;
     display: inline-block;
     font-size: 8px; /* Reduced from 10px */
@@ -71,7 +73,7 @@ body {
     }
 
     .btn {
-        padding: 5px 12px; /* Reduced from 6px 14px */
+        padding: 4px 10px; /* Reduced from 5px 12px */
         font-size: 7px; /* Reduced from 8px */
     }
 }
@@ -90,7 +92,7 @@ body {
     }
 
     .btn {
-        padding: 6px 16px; /* Reduced from 8px 18px */
+        padding: 5px 14px; /* Reduced from 6px 16px */
         font-size: 8px; /* Reduced from 9px */
     }
 }
